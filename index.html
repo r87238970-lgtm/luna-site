@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لونا | دنیای جادویی</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Tahoma', 'Arial', sans-serif;
+      background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+      color: white;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      padding: 40px 25px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(167, 139, 250, 0.3);
+      box-shadow: 0 10px 40px rgba(167, 139, 250, 0.2);
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .header h1 {
+      font-size: 38px;
+      color: #a78bfa;
+      text-shadow: 0 0 20px rgba(167, 139, 250, 0.6);
+      margin-bottom: 10px;
+    }
+    .header .subtitle {
+      font-size: 16px;
+      color: #bbbbbb;
+      letter-spacing: 2px;
+    }
+    .profile-img {
+      display: block;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 4px solid #a78bfa;
+      margin: 0 auto 25px;
+      object-fit: cover;
+      box-shadow: 0 0 30px rgba(167, 139, 250, 0.5);
+    }
+    .about {
+      text-align: center;
+      margin-bottom: 30px;
+      line-height: 2;
+      font-size: 17px;
+      color: #dddddd;
+    }
+    .section-title {
+      text-align: center;
+      color: #a78bfa;
+      font-size: 24px;
+      margin: 30px 0 20px;
+      position: relative;
+    }
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: #a78bfa;
+      margin: 10px auto;
+      border-radius: 3px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    .card {
+      background: rgba(167, 139, 250, 0.1);
+      border: 1px solid rgba(167, 139, 250, 0.3);
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      background: rgba(167, 139, 250, 0.2);
+      box-shadow: 0 10px 25px rgba(167, 139, 250, 0.3);
+    }
+    .card h3 {
+      color: #a78bfa;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+    .card p {
+      font-size: 14px;
+      color: #cccccc;
+      line-height: 1.8;
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      max-width: 300px;
+      margin: 15px auto;
+      padding: 15px;
+      background: linear-gradient(135deg, #a78bfa, #7c3aed);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-size: 18px;
+      font-family: inherit;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 5px 20px rgba(167, 139, 250, 0.4);
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 30px rgba(167, 139, 250, 0.6);
+    }
+    .social {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 25px;
+      flex-wrap: wrap;
+    }
+    .social a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: rgba(167, 139, 250, 0.2);
+      border: 1px solid #a78bfa;
+      border-radius: 25px;
+      color: #a78bfa;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+    .social a:hover {
+      background: #a78bfa;
+      color: white;
+    }
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(167, 139, 250, 0.2);
+      color: #888;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <h1>✦ لونا ✦</h1>
+      <div class="subtitle">دنیای جادویی داستان‌ها</div>
+    </div>
+
+    <img class="profile-img" src="https://i.pravatar.cc/300?img=47" alt="لونا">
+
+    <div class="about">
+      سلام! من لونا هستم 👋<br>
+      اینجا جاییه که داستان‌ها با جادوی هوش مصنوعی زنده می‌شن.<br>
+      کنار من باش تا با هم دنیای جدیدی بسازیم.
+    </div>
+
+    <h2 class="section-title">خدمات من</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>🎬 انیمیشن AI</h3>
+        <p>ساخت انیمیشن‌های جذاب با هوش مصنوعی</p>
+      </div>
+      <div class="card">
+        <h3>📖 داستان‌گویی</h3>
+        <p>روایت داستان‌های جادویی و فانتزی</p>
+      </div>
+      <div class="card">
+        <h3>🎨 طراحی</h3>
+        <p>طراحی گرافیک و محتوای بصری خلاقانه</p>
+      </div>
+    </div>
+
+    <button class="btn" onclick="showMessage()">✦ ارتباط با من ✦</button>
+
+    <div class="social">
+      <a href="#">📺 یوتیوب</a>
+      <a href="#">📷 اینستاگرام</a>
+      <a href="#">✉️ ایمیل</a>
+    </div>
+
+    <footer>
+      © ۲۰۲۴ لونا | ساخته شده با 💜
+    </footer>
+
+  </div>
+
+  <script>
+    function showMessage() {
+      alert("سلام! خوشحالم که اینجایی ✦\nبه زودی راه‌های ارتباطی فعال می‌شن.");
+    }
+  </script>
+
+</body>
+</html>
